@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: Test
+spec:
+  destination:
+    name: ''
+    namespace: test
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: .
+    repoURL: 'https://github.com/Kritika786/helm-argocd-deployments.git'
+    targetRevision: HEAD
+  sources: []
+  project: default
+  syncPolicy:
+    automated: null
