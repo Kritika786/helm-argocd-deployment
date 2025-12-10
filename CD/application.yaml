@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: .
-    repoURL: 'https://github.com/Kritika786/helm-argocd-deployments.git'
+    repoURL: 'https://github.com/Kritika786/helm-argocd-deployment.git'
     targetRevision: HEAD
   sources: []
   project: default
